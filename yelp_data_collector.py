@@ -2,7 +2,8 @@
 """
 Created on Thu Jun 11 10:16:04 2020
 
-@author: Kevin
+@author: justinmlam
+url:https://github.com/justinmlam/foodcouver/blob/master/gather_data.ipynb
 """
 import requests
 import json
@@ -10,8 +11,8 @@ import time
 
 # Testing API Endpoints
 
-API_KEY = 'NE2knarp5Rl48iMu-tMefXVJKYVcHe3PazFYs-N4qnzkQfgC7tYcCAMdl_GJCSIBM03pjRKACTpTsTIER0qi6U13OmTgdIcPDhGO5kPeT2_cD41j7fL3dSgEMEXiXnYx'
-CLIENT_ID = 'K6WBh_OQTy3myeNnbNhcZQ'
+API_KEY = 'API_KEY HERE'
+CLIENT_ID = 'ID_HERE'
 
 ENDPOINT = "https://api.yelp.com/v3/businesses/search"
 
@@ -37,24 +38,24 @@ restaurant_aliases = [restaurant['alias'] for restaurant in restaurants]
 restaurant_titles = [restaurant['title'] for restaurant in restaurants]
 
 # Loop through all categories and collect data
-# restaurants_in_toronto = []
+restaurants_in_toronto = []
 
-# for category in restaurant_aliases:
-#     PARAMETERS['categories'] = category
-#     # Cycle through restaurants
-#     for offset_number in range(0,1000,50):x
-#         PARAMETERS['offset'] = offset_number
+for category in restaurant_aliases:
+    PARAMETERS['categories'] = category
+    # Cycle through restaurants
+    for offset_number in range(0,1000,50):
+        PARAMETERS['offset'] = offset_number
 
-#         response = requests.get(url=ENDPOINT, params=PARAMETERS, headers=HEADERS)
+        response = requests.get(url=ENDPOINT, params=PARAMETERS, headers=HEADERS)
 
-#         if not response.json().get('businesses', False):
-#             break
+        if not response.json().get('businesses', False):
+            break
 
-#         restaurants_in_toronto.extend(response.json()['businesses'])
+        restaurants_in_toronto.extend(response.json()['businesses'])
 
-#         print("{}: {}-{}".format(category, offset_number, offset_number+50))
+        print("{}: {}-{}".format(category, offset_number, offset_number+50))
         
-#         time.sleep(0.5) ## Don't want to get blocked by Yelp API
+        time.sleep(0.5) ## Don't want to get blocked by Yelp API
 
 restaurants_file =  open("toronto_restaurants_duplicates.json", "w")
 json.dump(restaurants_in_toronto, restaurants_file, indent=6)
