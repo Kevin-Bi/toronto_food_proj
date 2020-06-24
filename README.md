@@ -30,7 +30,7 @@ After importing the datasets, I cleaned it up and merged them together for analy
   - Droped duplicates for df3_expanded and craete df3 that remains only one category per restaurant 
 
 ## EDA
-![Alt text](/relative/path/to/Summary Dist.png)
+![Alt text](Summary Dist.png)
 
 
 ## Legality
