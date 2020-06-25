@@ -12,7 +12,9 @@ I will be using data collected from Yelp API and an online dataset to answer the
 
 ## Code and Resources Used
 **Python Version**: 3.7
+
 **Packages**: pandas, numpy, matplotlib, seaborn, selenium, json, folium
+
 **Extra Dataset**: https://public.tableau.com/profile/stephanie.o.gay.garcia#!/vizhome/TorontoRestaurants/TorontoRestaurantsByCategory
 
 **API Data Collector and Visualization References**: https://github.com/justinmlam/foodcouver/blob/master/
@@ -30,8 +32,17 @@ After importing the datasets, I cleaned it up and merged them together for analy
   - Droped duplicates for df3_expanded and craete df3 that remains only one category per restaurant 
 
 ## EDA
-![](images/Summary%20Dist.png)
+### Distribution of Numerical Variables 
+![Summary Distribution](https://user-images.githubusercontent.com/65966223/85639244-15f45c00-b656-11ea-86ee-e3072b5fb33b.png)
 
+### Top Five Categories
+![Top five](https://user-images.githubusercontent.com/65966223/85639270-2e647680-b656-11ea-8dd8-703f93eeee91.png)
+
+### Restaurants Density by Ward
+![Total Restaurants](https://user-images.githubusercontent.com/65966223/85639638-53a5b480-b657-11ea-9540-ef62e883e92c.png)
+
+### Average Price by Ward
+![Average Price](https://user-images.githubusercontent.com/65966223/85639706-9071ab80-b657-11ea-9bd3-cdb050c1397d.png)
 
 ## Legality
 This project uses the Yelp Fusion API, and terms and conditions can be found here: https://www.yelp.ca/developers/api_terms 
