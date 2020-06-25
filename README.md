@@ -13,7 +13,7 @@ I will be using data collected from Yelp API and an online dataset to answer the
 ## Code and Resources Used
 **Python Version**: 3.7
 
-**Packages**: pandas, numpy, matplotlib, seaborn, selenium, json, folium
+**Packages**: pandas, geopandas, numpy, matplotlib, seaborn, json, folium
 
 **Extra Dataset**: https://public.tableau.com/profile/stephanie.o.gay.garcia#!/vizhome/TorontoRestaurants/TorontoRestaurantsByCategory
 
@@ -43,6 +43,11 @@ After importing the datasets, I cleaned it up and merged them together for analy
 
 ### Average Price by Ward
 ![Average Price](https://user-images.githubusercontent.com/65966223/85639706-9071ab80-b657-11ea-9bd3-cdb050c1397d.png)
+
+In summary, Spadina-Fort York and University-Rosedale area have highest density of restaurants. It is expected that most of the expensive restaurants are located in downtown Toronto and clustered in the Financial and Entertainment Districts. Uptown Toronto also have a high average price because of upscale restaurants located in Lawrance-Yonge and Yorkdale area.
+
+## Use
+The jupyter notebook for this project can be viewed in [here](https://nbviewer.jupyter.org/github/Kevin-Bi/toronto_food_proj/blob/master/Toronto_Food_Project_EDA.ipynb#).
 
 ## Legality
 This project uses the Yelp Fusion API, and terms and conditions can be found here: https://www.yelp.ca/developers/api_terms 
