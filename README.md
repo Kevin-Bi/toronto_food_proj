@@ -47,7 +47,7 @@ After importing the datasets, I cleaned it up and merged them together for analy
 In summary, Spadina-Fort York and University-Rosedale area have highest density of restaurants. It is expected that most of the expensive restaurants are located in downtown Toronto and clustered in the Financial and Entertainment Districts. Uptown Toronto also have a high average price because of upscale restaurants located in Lawrance-Yonge and Yorkdale area.
 
 ## Use
-The jupyter notebook for this project can be viewed in [here](https://nbviewer.jupyter.org/github/Kevin-Bi/toronto_food_proj/blob/master/Toronto_Food_Project_EDA.ipynb#).
+The jupyter notebook for this project can be viewed in [here](https://nbviewer.jupyter.org/github/Kevin-Bi/toronto_food_proj/blob/master/Toronto_Food_EDA.ipynb#).
 
 ## Legality
 This project uses the Yelp Fusion API, and terms and conditions can be found here: https://www.yelp.ca/developers/api_terms 
